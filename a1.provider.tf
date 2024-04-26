@@ -21,11 +21,11 @@ terraform {
     #key is the file name which will be created and you are going to store your statefile content inside that
     key = "project.tfstate"
   }
-#required_version = ">= 1.2.3"
+required_version = ">= 1.2.3"
 }
 
 # Configure the Microsoft Azure Provider
-/*provider "azurerm" {
+provider "azurerm" {
   features {}
   #skip_provider_registration = true 
   subscription_id = var.subscription_id
@@ -33,7 +33,7 @@ terraform {
   client_secret = var.client_secret
   tenant_id = var.tenant_id
 
-}*/
+}
 
 variable ""client_id"" {
   type = string 
